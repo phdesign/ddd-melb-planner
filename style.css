@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400');
+
+html, body {
+  font-weight: 300;
+  font-family: 'Hind', sans-serif;
+}
+a {
+  cursor: pointer;
+}
+
+/* Header styles */
+header {
+  margin-bottom: 2em;
+}
+header .title {
+  margin-bottom: 0;
+}
+header .date {
+  color: #666;
+}
+
+/* Help styles */
+.help {
+  font-size: .9em;
+  margin-top: 1em;
+  max-width: 510px;
+  color: #004085;
+  background-color: #cce5ff;
+  border: 1px solid #b8daff;
+  border-radius: .25em;
+  padding: 0 1.25em;
+}
+.help b {
+  font-weight: 400;
+}
+.help .print {
+  text-decoration: underline;
+  color: blue;
+}
+.help .toggle-help {
+  float: right;
+  margin-top: 1em;
+}
+.help .toggle-help .fa {
+  color: #004085;
+}
+
+/* Component styles */
+section {
+  display: flex;
+}
+.timeslot {
+  margin-right: 20px;
+  color: #666;
+  width: 120px;
+}
+.talks {
+  width: 100%;
+}
+article {
+  max-width: 400px;
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  page-break-inside: avoid;
+}
+.title {
+  font-size: 1.4em;
+  line-height: 1.1em;
+  margin-bottom: 10px;
+}
+.title, .title:active, .title:hover, .title:link {
+  color: #000;
+  text-decoration: none;
+}
+.abstract {
+  color: #666;
+  margin-bottom: 1em;
+}
+.speaker {
+  color: #666;
+  margin-right: 10px;
+}
+.room {
+  border: 1px solid #ccc;
+  color: #666;
+  padding: 1px 8px 0;
+  display: inline-block;
+  font-size: 0.6em;
+  border-radius: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.fa {
+  color: #666;
+  font-size: 16px;
+  margin: 0 5px;
+}
+article .fa-trash {
+  float: right;
+  margin: 0;
+}
+
+/* Footer styles */
+footer {
+  color: #666;
+  margin-top: 1em;
+}
+
+/* Element styles */
+.reset-btn {
+  font-weight: 300;
+  font-size: .6em;
+  padding: 3px 20px 2px;
+  border-radius: 1em;
+  text-transform: uppercase;
+  color: white;
+  background: purple;
+  margin-left: 20px;
+}
+.reset-btn .fa {
+  color: white;
+  margin: 0 10px 0 0;
+}
+
+@media print
+{    
+  body {
+    font-size: 12px;
+  }
+  .fa,
+  .help,
+  .reset-btn {
+    display: none;
+  }
+}
