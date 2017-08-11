@@ -15,10 +15,13 @@
         
         <div class="title">
           DDD Melbourne 2017
-          <a class="reset-btn" v-on:click.prevent="reset"><i class="fa fa-refresh"></i>Reset</a>
+          <a class="reset-btn" v-on:click.prevent="reset">Reset</a>
         </div>
         <div class="date">Saturday, 12 August 2017</div>
-        <div class="help">
+        <div class="alert deprecated" style="display: none;">
+          <p>This version of the planner is outdated, please find the latest version here: <a href="http://phdesign.com.au/ddd-melb-planner" target="_top">http://phdesign.com.au/ddd-melb-planner</a></p>
+        </div>
+        <div class="alert help">
           <a class="toggle-help" v-on:click.prevent="showHelp = !showHelp">
             <i class="fa" :class="{'fa-compress': showHelp, 'fa-expand': !showHelp}"></i>
           </a>

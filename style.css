@@ -19,16 +19,19 @@ header .date {
   color: #666;
 }
 
-/* Help styles */
-.help {
+/* Alert styles */
+.alert {
   font-size: .9em;
   margin-top: 1em;
   max-width: 510px;
-  color: #004085;
-  background-color: #cce5ff;
-  border: 1px solid #b8daff;
+  border: 1px solid transparent;
   border-radius: .25em;
   padding: 0 1.25em;
+}
+.help {
+  color: #004085;
+  background-color: #cce5ff;
+  border-color: #b8daff;
 }
 .help b {
   font-weight: 400;
@@ -43,6 +46,11 @@ header .date {
 }
 .help .toggle-help .fa {
   color: #004085;
+}
+.deprecated {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
 }
 
 /* Component styles */
